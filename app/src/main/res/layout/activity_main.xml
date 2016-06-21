@@ -16,14 +16,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{usuario.nome}"
-            android:textSize="20sp"
-            android:onClick="@{tratador.click}"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:text="@{usuario.nome + ' ' + usuario.sobrenome}"
+            android:onLongClick="@{tratador.longClick}"/>
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{usuario.sobrenome}"
-            android:textSize="20sp"
-            android:onLongClick="@{tratador.longClick}"/>/>
+            android:id="@+id/edtNome" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtSobreNome" />
     </LinearLayout>
 </layout>
