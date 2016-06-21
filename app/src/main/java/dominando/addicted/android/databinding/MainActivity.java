@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         Usuario usuario = new Usuario("Leo", "Turbiabi");
         binding.setUsuario(usuario);
+        binding.setTratador(new TratadorMagico());
     }
 }

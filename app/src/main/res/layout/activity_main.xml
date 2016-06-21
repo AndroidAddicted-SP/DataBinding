@@ -4,6 +4,9 @@
         <variable
             name="usuario"
             type="dominando.addicted.android.databinding.Usuario" />
+        <variable
+            name="tratador"
+            type="dominando.addicted.android.databinding.TratadorMagico"/>
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,11 +17,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{usuario.nome}"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:onClick="@{tratador.click}"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{usuario.sobrenome}"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:onLongClick="@{tratador.longClick}"/>/>
     </LinearLayout>
 </layout>
